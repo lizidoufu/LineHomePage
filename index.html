@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <title>LineHome</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="mystyle.css" type="text/css" />
+</head>
+
+<body>
+
+    <div id='header'>
+        <div><img id="portrail" src="../img/beijixiong.jpg" alt="touxiang"></div>
+        <div id="info">
+            <div class="div-info">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:Line</div>
+            <div class="div-info">Wechat&nbsp;&nbsp;&nbsp;:lizidoufu</div>
+            <div class="div-info">Mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:825833029@qq.com</div>
+            <div class="div-info">Sign&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:long long ago~</div>
+        </div>
+        <!-- <div id="signature">Line's HomePage</div> -->
+    </div>
+
+    <div id='navigator'>
+        <div class="item"><a id="item-myj" class='a-item' href="sub-index-myj.html" target="ifram-change">MYJ</a></div>
+        <div class="item"><a class='a-item' href="sub-index-coding.html" target="ifram-change">Coding</a></div>
+    </div>
+
+    <div id='content'>
+        <iframe id="iframe-1" href="sub-index-myj.html" name='ifram-change'></iframe>
+    </div>
+
+    <div id='footer'>
+        <span id="showTime"></span>
+    </div>
+
+    <script>
+        // 在 footer 位置加载当前时间
+        setInterval("document.getElementById('showTime').innerHTML=Date()", 100);
+
+        // 加载完就切换到MYJ的目录
+        document.getElementById("item-myj").click();
+    </script>
+
+</body>
